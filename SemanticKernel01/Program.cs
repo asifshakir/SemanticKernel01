@@ -77,16 +77,16 @@ namespace SemanticKernel01
                         totalOutputTokensForSession += usage.OutputTokenCount;
 
                         Console.WriteLine();
-                        Console.WriteLine("🔹 Token Usage Details 🔹");
-                        Console.WriteLine($"📥 Input Tokens: {usage.InputTokenCount}");
-                        Console.WriteLine($"📤 Output Tokens: {usage.OutputTokenCount}");
+                        Console.WriteLine("Token Usage Details");
+                        Console.WriteLine($"* Input Tokens: {usage.InputTokenCount}");
+                        Console.WriteLine($"* Output Tokens: {usage.OutputTokenCount}");
                         Console.WriteLine("----------------------------");
-                        Console.WriteLine($"🟢 Cached Token Count: {usage.InputTokenDetails.CachedTokenCount}");
-                        Console.WriteLine($"🎙️ Audio Token Count (Input): {usage.InputTokenDetails.AudioTokenCount}");
-                        Console.WriteLine($"🎙️ Audio Token Count (Output): {usage.OutputTokenDetails.AudioTokenCount}");
-                        Console.WriteLine($"🧠 Reasoning Token Count: {usage.OutputTokenDetails.ReasoningTokenCount}");
-                        Console.WriteLine($"❌ Rejected Prediction Tokens: {usage.OutputTokenDetails.RejectedPredictionTokenCount}");
-                        Console.WriteLine($"✅ Accepted Prediction Tokens: {usage.OutputTokenDetails.AcceptedPredictionTokenCount}");
+                        Console.WriteLine($"- Cached Token Count: {usage.InputTokenDetails.CachedTokenCount}");
+                        Console.WriteLine($"- Audio Token Count (Input): {usage.InputTokenDetails.AudioTokenCount}");
+                        Console.WriteLine($"- Audio Token Count (Output): {usage.OutputTokenDetails.AudioTokenCount}");
+                        Console.WriteLine($"- Reasoning Token Count: {usage.OutputTokenDetails.ReasoningTokenCount}");
+                        Console.WriteLine($"- Rejected Prediction Tokens: {usage.OutputTokenDetails.RejectedPredictionTokenCount}");
+                        Console.WriteLine($"- Accepted Prediction Tokens: {usage.OutputTokenDetails.AcceptedPredictionTokenCount}");
                         Console.WriteLine("----------------------------");
                         Console.WriteLine();
                     }
